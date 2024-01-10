@@ -1,23 +1,19 @@
-//initialize the package.json
-npm init -y
+# Project Initialization Steps
 
-//install prisma with typescript, ts-node for typescript
-npm i --save-dev prisma typescript ts-node @types/node nodemon
+1. **Initialize package.json:**
 
-//initialize the tsconfig file for typescript
-npx tsc --init
+2. **Install Prisma with TypeScript, ts-node, and nodemon:**
 
-//create schema
-npx prisma init
+3. **Initialize tsconfig file for TypeScript:**
 
-//Database Connection
-https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases/connect-your-database-typescript-postgresql
+4. **Create Prisma schema:**
 
-//Generate migrate and run the migration against the database
-npx prisma migrate dev --name <file_name>
+5. **Database Connection:**
+Follow the [Prisma documentation](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases/connect-your-database-typescript-postgresql) for setting up the database connection with TypeScript and PostgreSQL.
 
-//https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases/install-prisma-client-typescript-postgresql
+6. **Generate migration and run it against the database:**
+
+Reference: [Prisma - Migrate Dev](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases/install-prisma-client-typescript-postgresql)
+
+7. **Install Prisma Client for TypeScript:**
 npm install @prisma/client
-
-//Update the DB with the updated schema
-prisma migrate dev or prisma db push
